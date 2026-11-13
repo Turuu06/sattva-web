@@ -5,12 +5,26 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sattva Mongolia — бясалгал, мэдлэг, Сева</title>
 <meta name="description" content="Art of Living Mongolia-гийн апп: удирдлагатай бясалгал, амьсгалын дасгал, иог, орчуулсан лекц, ном, Сева — монгол хэлээр.">
+<link rel="canonical" href="https://sattva.mn/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sattva Mongolia">
+<meta property="og:url" content="https://sattva.mn/">
+<meta property="og:locale" content="mn_MN">
 <meta property="og:title" content="Sattva Mongolia">
-<meta property="og:description" content="Өдөр бүрийн бясалгал. Нэг апп-д.">
-<meta property="og:image" content="https://sattva.mn/img/01-home.jpg">
+<meta property="og:description" content="Өдөр бүрийн бясалгал. Нэг апп‑д.">
+<meta property="og:image" content="https://sattva.mn/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sattva Mongolia апп — Бясалгал, Мэдлэг">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#764CDB">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" hreflang="mn" href="https://sattva.mn/">
+<link rel="alternate" hreflang="en" href="https://sattva.mn/en/">
+<link rel="alternate" hreflang="x-default" href="https://sattva.mn/">
+<link rel="stylesheet" href="/fonts/inter.css">
 <style>
 :root{
   --p:#764CDB; --p2:#9A6BF0; --pSoft:#F2ECFF; --ink:#1A1A1B; --ink2:#5E5869; --ink3:#8A8494;
@@ -29,9 +43,9 @@ header{position:sticky;top:0;z-index:20;background:rgba(250,249,252,.85);backdro
 .logo i{width:30px;height:30px;border-radius:50%;background:radial-gradient(circle at 50% 40%,#fff 0 22%,transparent 23%),linear-gradient(135deg,var(--p),var(--p2));display:block}
 .logo span{color:var(--p)}
 .links{display:flex;gap:22px;font:500 15px var(--font);color:var(--ink2)}
-.links a:hover{color:var(--p)}
+.links a{padding:4px 0}.links a:hover{color:var(--p)}
 .right{margin-left:auto;display:flex;align-items:center;gap:14px;font:500 14px var(--font)}
-.lang b{color:var(--ink)} .lang{color:var(--ink3)}
+.lang b{color:var(--ink)} .lang{color:var(--ink2)}
 .btn{display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 20px;border-radius:12px;font:600 15px var(--font);background:var(--p);color:#fff;white-space:nowrap}
 .btn.sm{height:40px;padding:0 16px;font-size:14px}
 .btn.ghost{background:var(--surface);color:var(--p);border:1.5px solid var(--p)}
@@ -46,7 +60,7 @@ header{position:sticky;top:0;z-index:20;background:rgba(250,249,252,.85);backdro
 h1{font:800 clamp(36px,4.6vw,60px)/1.06 var(--font);letter-spacing:-.02em;margin:14px 0 18px}
 .lead{font:400 clamp(17px,1.5vw,20px)/1.55 var(--font);color:var(--ink2);max-width:560px}
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px;align-items:center}
-.note{font:500 13px var(--font);color:var(--ink3);margin-top:14px}
+.note{font:500 13px var(--font);color:var(--ink2);margin-top:14px}
 .phones{position:relative;height:560px}
 .phone{position:absolute;width:250px;border-radius:38px;padding:9px;background:#15121C;box-shadow:0 30px 60px -20px rgba(70,40,140,.45)}
 .phone img{display:block;width:100%;border-radius:30px}
@@ -102,10 +116,10 @@ section{padding:88px 0}
 .plan{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:28px}
 .plan.hi{border:2px solid var(--p)}
 .plan h3{font:700 22px var(--font)}.plan .price{font:800 32px var(--font);margin:12px 0 4px}
-.plan .price small{font:500 15px var(--font);color:var(--ink3)}
+.plan .price small{font:500 15px var(--font);color:var(--ink2)}
 /* about */
 .about{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.ph{border-radius:24px;background:repeating-linear-gradient(135deg,#EEE7FB 0 14px,#F6F2FD 14px 28px);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font:600 14px var(--font);color:var(--ink3);border:1px dashed #D8CDF0}
+.ph{border-radius:24px;background:repeating-linear-gradient(135deg,#EEE7FB 0 14px,#F6F2FD 14px 28px);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font:600 14px var(--font);color:var(--ink2);border:1px dashed #D8CDF0}
 /* final cta */
 .final{background:linear-gradient(135deg,#5B3BB5,var(--p) 55%,#9A6BF0);color:#fff;border-radius:28px;padding:56px;text-align:center}
 .final .h2{color:#fff}.final .sub{color:rgba(255,255,255,.85);margin:0 auto}
@@ -114,10 +128,10 @@ section{padding:88px 0}
 /* footer */
 footer{border-top:1px solid var(--line);padding:48px 0 36px;margin-top:88px;background:var(--surface)}
 .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
-.fgrid h4{font:600 13px var(--font);letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);margin-bottom:12px}
+.fgrid h2{font:600 13px var(--font);letter-spacing:.06em;text-transform:uppercase;color:var(--ink2);margin-bottom:12px}
 .fgrid a{display:block;font:500 15px var(--font);color:var(--ink2);padding:5px 0}
 .fgrid p{font:400 14px/1.6 var(--font);color:var(--ink2);margin-top:12px;max-width:300px}
-.copy{border-top:1px solid var(--line);margin-top:32px;padding-top:20px;display:flex;justify-content:space-between;gap:16px;font:500 13px var(--font);color:var(--ink3);flex-wrap:wrap}
+.copy{border-top:1px solid var(--line);margin-top:32px;padding-top:20px;display:flex;justify-content:space-between;gap:16px;font:500 13px var(--font);color:var(--ink2);flex-wrap:wrap}
 /* mobile */
 .burger{display:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:var(--surface);align-items:center;justify-content:center}
 @media (max-width:900px){
@@ -131,25 +145,36 @@ footer{border-top:1px solid var(--line);padding:48px 0 36px;margin-top:88px;back
   .dayPhone{order:-1}.dayPhone .phone{width:230px}
 }
 @media (max-width:520px){.grid4{grid-template-columns:1fr}.fgrid{grid-template-columns:1fr}}
+/* Н237 MN / EN: утсан дээр толгойд багтахгүй → «Апп татах» товч нуугдана (hero-д store товч шууд доор) — Төрөөгийн сонголт хүлээж байна */
+.lang{white-space:nowrap}
+/* Н238 (Т330 хүртээмж): «Агуулга руу алгасах» (Tab-д л харагдана) · линкийн өндөр ≥ 24 px · FAQ = байгаа гарчиг / .sub хэв маяг */
+.skip{position:absolute;left:12px;top:-80px;z-index:60;background:var(--p);color:#fff;font:600 14px var(--font);padding:10px 14px;border-radius:10px}
+.skip:focus{top:12px}
+.lang a,.note a{display:inline-block;padding:4px 2px}
+.faq{display:flex;flex-direction:column;gap:22px;margin-top:32px;max-width:760px}
+.faq h3{font:600 17px/1.4 var(--font);margin-bottom:6px}
+.faq a{color:var(--p);text-decoration:underline}
+@media (max-width:520px){.lang+.btn.sm{display:none}}
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Агуулга руу алгасах</a>
 
 <header><div class="wrap nav">
   <a class="logo" href="/"><i></i>Sattva <span>Mongolia</span></a>
   <nav class="links"><a href="#meditate">Бясалгал</a><a href="#features">Мэдлэг</a><a href="#features">Курс</a><a href="#seva">Сева</a><a href="#about">Бидний тухай</a><a href="#contact">Холбоо барих</a></nav>
-  <div class="right"><a class="btn sm" href="#download">Апп татах</a></div>
+  <div class="right"><nav class="lang" aria-label="Хэл · Language"><a href="/" lang="mn" aria-current="page"><b>MN</b></a> / <a href="/en/" lang="en" hreflang="en">EN</a></nav><a class="btn sm" href="#download">Апп татах</a></div>
 </div></header>
 
+<main id="main">
 <div class="hero"><div class="wrap heroIn">
   <div>
     <div class="eyebrow">Art of Living Mongolia-гийн апп</div>
-    <h1>Өдөр бүрийн бясалгал. Нэг апп-д.</h1>
-    <p class="lead">Удирдлагатай бясалгал, амьсгалын дасгал, иог, орчуулсан лекц, ном — монгол хэлээр. Хуваариа тавь, аяллаа үргэлжлүүл, сэвад нэгд.</p>
+    <h1>Өдөр бүрийн бясалгал. Нэг апп‑д.</h1>
+    <p class="lead">Удирдлагатай бясалгал, амьсгалын дасгал, иог, орчуулсан лекц, ном — монгол хэлээр. Хуваариа тавь, аяллаа үргэлжлүүл, Севад нэгд.</p>
     <div class="cta">
-      <span class="btn store" aria-disabled="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M16.4 12.6c0-2.4 2-3.5 2-3.6-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9s-1.8-.9-3-.8C7 7.3 5.6 8.2 4.8 9.6c-1.6 2.8-.4 6.9 1.2 9.2.8 1.1 1.7 2.3 2.9 2.3 1.2-.1 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.6-1-2.6-3.6zM14.1 5.6c.6-.8 1.1-1.9 1-3-1 0-2.1.6-2.8 1.4-.6.7-1.1 1.8-1 2.9 1.1.1 2.1-.5 2.8-1.3z"/></svg><span><small>App Store</small><b>Татах</b></span></span>
-      <span class="btn store" aria-disabled="true"><svg width="20" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M4 2.5v19l10-9.5L4 2.5zm11.4 8.2L6.7 3.2l10.7 6.2-2 1.3zm0 2.6l2 1.3L6.7 20.8l8.7-7.5zm3.3-3.1l2.6 1.5c.9.5.9 1.5 0 2l-2.6 1.5-2.2-2.5 2.2-2.5z"/></svg><span><small>Google Play</small><b>Татах</b></span></span>
-      <span class="soon">Удахгүй</span>
+      <span class="btn store" aria-disabled="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M16.4 12.6c0-2.4 2-3.5 2-3.6-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9s-1.8-.9-3-.8C7 7.3 5.6 8.2 4.8 9.6c-1.6 2.8-.4 6.9 1.2 9.2.8 1.1 1.7 2.3 2.9 2.3 1.2-.1 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.6-1-2.6-3.6zM14.1 5.6c.6-.8 1.1-1.9 1-3-1 0-2.1.6-2.8 1.4-.6.7-1.1 1.8-1 2.9 1.1.1 2.1-.5 2.8-1.3z"/></svg><span><small>App Store</small><b>Удахгүй</b></span></span>
+      <span class="btn store" aria-disabled="true"><svg width="20" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M4 2.5v19l10-9.5L4 2.5zm11.4 8.2L6.7 3.2l10.7 6.2-2 1.3zm0 2.6l2 1.3L6.7 20.8l8.7-7.5zm3.3-3.1l2.6 1.5c.9.5.9 1.5 0 2l-2.6 1.5-2.2-2.5 2.2-2.5z"/></svg><span><small>Google Play</small><b>Удахгүй</b></span></span>
     </div>
     <p class="note">Үнэгүй бясалгалууд нээлттэй. Утасны дугаараар нэвтэрнэ.</p>
   </div>
@@ -161,14 +186,14 @@ footer{border-top:1px solid var(--line);padding:48px 0 36px;margin-top:88px;back
 
 <section id="meditate"><div class="wrap">
   <div class="eyebrow">Sattva-тай нэг өдөр</div>
-  <div class="h2">Хуваариа тавь — апп сануулна.</div>
+  <h2 class="h2">Хуваариа тавь — апп сануулна.</h2>
   <p class="sub">«Миний хуваарь»-д дасгалаа цагтай нь тавина. Мөрийг дарахад дасгал шууд нээгдэж, дуусахад ✓ тэмдэглэгдэнэ.</p>
   <div class="day">
     <div class="steps">
       <div class="step"><span class="t">07:00</span><div><b>Гэрийн крияа</b><p>Өглөөний амьсгалын дасгал — тоглуулагч дээрээ дагаад хий.</p></div></div>
       <div class="step"><span class="t">12:30</span><div><b>Лекцээ үргэлжлүүл</b><p>Өчигдөр зогссон газраасаа — «Үргэлжлүүлэх» нэг товшилт.</p></div></div>
       <div class="step"><span class="t">18:00</span><div><b>Таймертай чимээгүй бясалгал</b><p>5 · 10 · 20 · 30 минут эсвэл хязгааргүй, хонх ба интервалтай.</p></div></div>
-      <div class="step"><span class="t">21:30</span><div><b>Иог нидра</b><p>Унтахын өмнөх гүн амралт. Аяллын даалгавар нэг шат ахина.</p></div></div>
+      <div class="step"><span class="t">21:30</span><div><b>Иог нидра</b><p>Унтахын өмнөх гүн амралт. Аяллын даалгаварт тоологдоно.</p></div></div>
     </div>
     <div class="dayPhone"><div class="phone"><img src="img/02-meditate.jpg" alt="Бясалгал — Миний хуваарь"></div></div>
   </div>
@@ -176,10 +201,10 @@ footer{border-top:1px solid var(--line);padding:48px 0 36px;margin-top:88px;back
 
 <section id="features" style="padding-top:0"><div class="wrap">
   <div class="eyebrow">Апп-д юу байна</div>
-  <div class="h2">Дадлага, мэдлэг, хамтын ажил — нэг дор.</div>
+  <h2 class="h2">Дадлага, мэдлэг, хамтын ажил — нэг дор.</h2>
   <div class="grid4">
     <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></div><h3>Бясалгал</h3><p>Удирдлагатай бясалгал, амьсгал, иог, иог нидра.</p><ul><li>Таймер, хонх</li><li>Миний хуваарь</li><li>Дуртай, жагсаалт</li></ul></div>
-    <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 016.5 3H20v15H6.5A2.5 2.5 0 004 20.5z"/><path d="M4 20.5V5.5"/></svg></div><h3>Мэдлэг</h3><p>Монгол хэлээр орчуулсан лекц, аудио, ном.</p><ul><li>Видео лекц (цуврал)</li><li>Аудио</li><li>Ном — апп дотор уншина</li></ul></div>
+    <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 016.5 3H20v15H6.5A2.5 2.5 0 004 20.5z"/><path d="M4 20.5V5.5"/></svg></div><h3>Мэдлэг</h3><p>Монгол хэлээр орчуулсан лекц, аудио, ном.</p><ul><li>Видео лекц — цуврал ба бусад лекц</li><li>Аудио</li><li>Ном — апп дотор уншина</li></ul></div>
     <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 9l9-5 9 5-9 5-9-5z"/><path d="M7 11v5c3 2 7 2 10 0v-5"/></svg></div><h3>Курс</h3><p>Art of Living-ийн хөтөлбөрүүд, багш нар, огноо.</p><ul><li>Аз жаргалын хөтөлбөр</li><li>Бүртгэл, сануулга</li><li>Гэрчилгээ</li></ul></div>
     <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></div><h3>Сева</h3><p>Нийгэмд үйлчлэх төслүүд — ил тод тайлантай.</p><ul><li>Төсөл, явц</li><li>Сайн дурын ажил</li><li>Жилийн тайлан</li></ul></div>
   </div>
@@ -187,7 +212,7 @@ footer{border-top:1px solid var(--line);padding:48px 0 36px;margin-top:88px;back
 
 <section class="screens"><div class="wrap">
   <div class="eyebrow">Дэлгэцүүд</div>
-  <div class="h2">Тайван, ойлгомжтой.</div>
+  <h2 class="h2">Тайван, ойлгомжтой.</h2>
   <div class="strip">
     <figure><div class="phone"><img src="img/01-home.jpg" alt=""></div><figcaption>Нүүр</figcaption></figure>
     <figure><div class="phone"><img src="img/02-meditate.jpg" alt=""></div><figcaption>Бясалгал</figcaption></figure>
@@ -196,13 +221,14 @@ footer{border-top:1px solid var(--line);padding:48px 0 36px;margin-top:88px;back
     <figure><div class="phone"><img src="img/06-player.jpg" alt=""></div><figcaption>Тоглуулагч</figcaption></figure>
     <figure><div class="phone"><img src="img/05-profile.jpg" alt=""></div><figcaption>Профайл</figcaption></figure>
   </div>
+  <p class="note">Зурагт жишээ өгөгдөл харагдаж байна.</p>
 </div></section>
 
 <section id="seva"><div class="wrap seva">
-  <div class="sevaCard"><span class="tagS">Жишээ</span><small>ЭРҮҮЛ МЭНД</small><h3>Жишээ: Эмнэлгийн цэвэр ус</h3><div class="bar"><i></i></div><div class="row"><span>Цугласан дүн</span><span>Зорилт</span></div></div>
+  <div class="sevaCard"><span class="tagS">Жишээ</span><small>ЭРҮҮЛ МЭНД</small><h3>Эмнэлгийн цэвэр ус</h3><div class="bar"><i></i></div><div class="row"><span>Цугласан дүн</span><span>Зорилт</span></div></div>
   <div>
     <div class="eyebrow">Сева</div>
-    <div class="h2">Хандив хаашаа очсоныг харна.</div>
+    <h2 class="h2">Хандив хаашаа очсоныг харна.</h2>
     <p class="sub">Төсөл бүр зорилт, явц, мэдээтэй. Дууссан төсөл «Өмнө · Дараа» зураг, тайлантай.</p>
     <div class="checks"><div>Төсөл бүрийн явц, цугласан дүн</div><div>Сайн дурын ажилд бүртгүүлэх</div><div>Жилийн тайлан — PDF, апп дотор</div></div>
   </div>
@@ -211,39 +237,52 @@ footer{border-top:1px solid var(--line);padding:48px 0 36px;margin-top:88px;back
 
 <section id="download" style="padding-top:0"><div class="wrap">
   <div class="eyebrow">Гишүүнчлэл</div>
-  <div class="h2">Эхлэхэд үнэгүй.</div>
+  <h2 class="h2">Эхлэхэд үнэгүй.</h2>
   <div class="member">
-    <div class="plan"><h3>Үнэгүй</h3><div class="price">0₮</div><p class="sub" style="font-size:15px">Нээлттэй бясалгал, таймер, хуваарь, сева.</p></div>
-    <div class="plan hi"><h3>Гишүүнчлэл <span class="soon">Удахгүй</span></h3><div class="price" style="font-size:22px;color:var(--ink2)">Үнэ удахгүй зарлагдана</div><p class="sub" style="font-size:15px">Бүх видео лекц, курс, ном, утсанд татаж үзэх.</p></div>
+    <div class="plan"><h3>Үнэгүй</h3><div class="price" style="font-size:22px;color:var(--ink2)">Нэвтрэхгүйгээр ч эхэлж болно</div><p class="sub" style="font-size:15px">Нээлттэй бясалгал, таймер, хуваарь, сатсанг, Мэдлэгийн үнэгүй хэсэг, аяллын эхний 10 шат, Сева.</p></div>
+    <div class="plan hi"><h3>Гишүүнчлэл <span class="soon">Удахгүй</span></h3><div class="price" style="font-size:22px;color:var(--ink2)">Үнэ зарлагдаагүй</div><p class="sub" style="font-size:15px">Бүх видео лекц, ном, аяллын 11-р шатнаас цааш, утсанд татаж интернэтгүй үзэх.</p></div>
   </div>
 </div></section>
 
 <section id="about" style="padding-top:0"><div class="wrap about">
   <div>
     <div class="eyebrow">Бидний тухай</div>
-    <div class="h2">Art of Living Mongolia</div>
-    <p class="sub">Гүрүдэв Шри Шри Рави Шанкарын үүсгэн байгуулсан Art of Living сангийн Монгол дахь салбар. Sattva Mongolia апп-ыг Арт оф Ливинг ХХК хөгжүүлж байна.</p>
+    <h2 class="h2">Art of Living Mongolia</h2>
+    <p class="sub">Гүрүдэв Шри Шри Рави Шанкарын үүсгэн байгуулсан Art of Living нь 180 гаруй улсад амьсгал, бясалгал, иогийн хөтөлбөр явуулдаг. Sattva Mongolia апп-ыг Арт Оф Ливинг ХХК хөгжүүлж байна.</p>
     <div class="cta"><a class="btn ghost" href="https://www.facebook.com/AOLMongolia" rel="noopener">Art of Living Mongolia</a></div>
   </div>
   <div class="dayPhone"><div class="phone"><img src="img/06-player.jpg" alt="Sattva апп — тоглуулагч"></div></div>
 </div></section>
 
+<section id="faq" style="padding-top:0"><div class="wrap">
+  <h2 class="h2">Түгээмэл асуулт</h2>
+  <div class="faq">
+    <div><h3>Апп-ыг хаанаас татах вэ?</h3><p class="sub">App Store, Google Play-д удахгүй гарна. Гармагц энэ хуудсанд холбоос нэмнэ.</p></div>
+    <div><h3>Яаж нэвтрэх вэ?</h3><p class="sub">8 оронтой утасны дугаараа оруулахад 6 оронтой код SMS-ээр ирнэ. Кодоо хэнд ч бүү хэл — бид утсаар, мессежээр хэзээ ч асуухгүй. Нэвтрэхгүйгээр ч үнэгүй бясалгалыг үзэж болно.</p></div>
+    <div><h3>Үнэгүй юу байна, гишүүнчлэлээр юу нээгдэх вэ?</h3><p class="sub">Нээлттэй бясалгал, таймер, хуваарь, аяллын эхний 10 шат, Сева үнэгүй. Гишүүнчлэлээр бүх видео лекц, ном, аяллын 11-р шатнаас цааш, татаж интернэтгүй үзэх нээгдэнэ. Үнэ удахгүй зарлагдана. Курсын дасгалууд тухайн курсыг төгссөн хүнд нээгдэнэ.</p></div>
+    <div><h3>Хандив хаашаа очдог вэ?</h3><p class="sub">Бүх хандив Арт Оф Ливинг ХХК-ийн дансанд орж, сонгосон төсөлдөө зарцуулагдана. Төсөл бүр явц, мэдээтэй; дууссан төсөл тайлантай. Апп-аар хандивлах удахгүй нээгдэнэ.</p></div>
+    <div><h3>Курсэд яаж бүртгүүлэх вэ?</h3><p class="sub">Апп-ын Курс табаас хөтөлбөрөө сонгоод «Бүртгүүлэх» дарна. Огноо зарлагдаагүй бол «Огноо удахгүй» гарна — сануулга авах боломжтой.</p></div>
+    <div><h3>Бүртгэлээ яаж устгах вэ?</h3><p class="sub">Апп-д: Профайл › Тохиргоо › Бүртгэл устгах. Апп-гүй бол <a href="/delete-account/">sattva.mn/delete-account</a> хуудсаар хүсэлт илгээнэ.</p></div>
+  </div>
+</div></section>
+
 <section id="contact" style="padding-top:0"><div class="wrap">
   <div class="final">
-    <div class="h2">Өнөөдрөөс эхэл.</div>
+    <h2 class="h2">Өнөөдрөөс эхэл.</h2>
     <p class="sub">Апп-аа татаад анхны бясалгалаа хий. Асуулт байвал бидэнтэй холбогдоорой.</p>
     <div class="cta"><span class="btn store">App Store</span><span class="btn store">Google Play</span><span class="soon">Удахгүй</span></div>
     <p class="note" style="color:rgba(255,255,255,.8)">Утас <a href="tel:+97699651000" style="color:#fff;text-decoration:underline">9965-1000</a> · <a href="https://www.facebook.com/AOLMongolia" style="color:#fff;text-decoration:underline" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/artofliving.mongolia" style="color:#fff;text-decoration:underline" rel="noopener">Instagram</a> · <a href="https://www.youtube.com/@artofliving.mongolia" style="color:#fff;text-decoration:underline" rel="noopener">YouTube</a></p>
   </div>
 </div></section>
+</main>
 
 <footer><div class="wrap">
   <div class="fgrid">
     <div><a class="logo" href="/" style="padding:0"><i></i>Sattva <span>Mongolia</span></a><p>Бясалгал, мэдлэг, Сева. Art of Living Mongolia-гийн апп.</p></div>
-    <div><h4>Апп</h4><a href="#meditate">Бясалгал</a><a href="#features">Мэдлэг</a><a href="#features">Курс</a><a href="#seva">Сева</a></div>
-    <div><h4>Байгууллага</h4><a href="#about">Бидний тухай</a><a href="#contact">Холбоо барих</a><a href="/support/">Тусламж</a></div>
-    <div><h4>Хууль</h4><a href="/privacy/">Нууцлалын бодлого</a><a href="/terms/">Үйлчилгээний нөхцөл</a><a href="/delete-account/">Бүртгэл устгах</a></div>
+    <div><h2>Апп</h2><a href="#meditate">Бясалгал</a><a href="#features">Мэдлэг</a><a href="#features">Курс</a><a href="#seva">Сева</a></div>
+    <div><h2>Байгууллага</h2><a href="#about">Бидний тухай</a><a href="#contact">Холбоо барих</a><a href="/support/">Тусламж</a></div>
+    <div><h2>Хууль</h2><a href="/privacy/">Нууцлалын бодлого</a><a href="/terms/">Үйлчилгээний нөхцөл</a><a href="/delete-account/">Бүртгэл устгах</a></div>
   </div>
-  <div class="copy"><span>© 2026 Арт оф Ливинг ХХК</span><span>Күүки ашигладаггүй</span></div>
+  <div class="copy"><span>© 2026 Арт Оф Ливинг ХХК</span><span>Күүки ашигладаггүй</span></div>
 </div></footer>
 </body></html>
