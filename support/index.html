@@ -7,16 +7,31 @@
 <link rel="canonical" href="https://sattva.mn/support/">
 <meta name="description" content="Sattva Mongolia тусламж, холбоо барих / Support and contact">
 <meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sattva Mongolia">
+<meta property="og:url" content="https://sattva.mn/support/">
+<meta property="og:locale" content="mn_MN">
+<meta property="og:title" content="Тусламж · Support — Sattva Mongolia">
+<meta property="og:description" content="Sattva Mongolia тусламж, холбоо барих / Support and contact">
+<meta property="og:image" content="https://sattva.mn/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sattva Mongolia апп — Бясалгал, Мэдлэг">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/fonts/inter-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-cyrillic-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/fonts/inter.css">
 <style>
 :root{--bg:#FAFAFA;--surface:#FFFFFF;--ink:#1A1A1B;--ink2:#6B6676;--line:#E1DDE9;--primary:#764CDB;--link:#5F3BC4;--soft:#F2ECFF;--warn:#A34A08;--warnbg:#FFF1E6}
 @media (prefers-color-scheme:dark){:root{--bg:#141119;--surface:#1E1A26;--ink:#F4F1FA;--ink2:#B4ADC4;--line:#3A3448;--primary:#A98BF5;--link:#C0A9FA;--soft:#2A2240;--warn:#F5A95C;--warnbg:#3A2A1A}}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Inter",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Inter","Inter Fallback",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
 header,main,footer{max-width:760px;margin:0 auto;padding:0 16px}
 header{display:flex;justify-content:space-between;align-items:center;padding-top:16px;padding-bottom:16px;border-bottom:1px solid var(--line)}
 .brand{font-weight:700;color:var(--ink);text-decoration:none}
@@ -38,14 +53,17 @@ mark.tbd{background:var(--warnbg);color:var(--warn);border-radius:4px;padding:0 
 ul,ol{padding-left:22px}
 footer{margin-top:48px;padding-top:16px;padding-bottom:32px;border-top:1px solid var(--line);color:var(--ink2);font-size:.9rem}
 footer a{margin-right:14px;display:inline-block;margin-bottom:6px;padding:2px 0;min-height:24px}
+.skip{position:absolute;left:12px;top:-80px;z-index:60;background:#764CDB;color:#fff;font-weight:600;padding:10px 14px;border-radius:10px;text-decoration:none}
+.skip:focus{top:12px}
 </style>
 <script>
 if(/[?&]lang=en\b/.test(location.search)&&!location.hash){document.documentElement.lang="en";addEventListener("DOMContentLoaded",function(){var e=document.getElementById("en");if(e)e.scrollIntoView();});}
 </script>
 </head>
 <body>
+<a class="skip" href="#main">Агуулга руу алгасах · Skip to content</a>
 <header><a class="brand" href="/">Sattva <span>Mongolia</span></a><nav class="lang"><a href="#mn">MN</a><a href="#en">EN</a></nav></header>
-<main>
+<main id="main">
 <section class="lang-block" id="mn" lang="mn">
 <h1>Тусламж</h1>
 <h2>Холбоо барих</h2>

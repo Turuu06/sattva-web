@@ -24,12 +24,16 @@
 <link rel="alternate" hreflang="mn" href="https://sattva.mn/">
 <link rel="alternate" hreflang="en" href="https://sattva.mn/en/">
 <link rel="alternate" hreflang="x-default" href="https://sattva.mn/">
+<link rel="preload" href="/fonts/inter-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-cyrillic-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/fonts/inter.css">
 <style>
 :root{
   --p:#764CDB; --p2:#9A6BF0; --pSoft:#F2ECFF; --ink:#1A1A1B; --ink2:#5E5869; --ink3:#8A8494;
   --line:#ECE7F5; --bg:#FAF9FC; --surface:#FFFFFF; --ok:#1F8A5B; --soonBg:#FFF4D1; --soonFg:#6B5200;
-  --r:20px; --font:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r:20px; --font:"Inter","Inter Fallback",system-ui,-apple-system,"Segoe UI",sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:var(--font);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
@@ -63,7 +67,7 @@ h1{font:800 clamp(36px,4.6vw,60px)/1.06 var(--font);letter-spacing:-.02em;margin
 .note{font:500 13px var(--font);color:var(--ink2);margin-top:14px}
 .phones{position:relative;height:560px}
 .phone{position:absolute;width:250px;border-radius:38px;padding:9px;background:#15121C;box-shadow:0 30px 60px -20px rgba(70,40,140,.45)}
-.phone img{display:block;width:100%;border-radius:30px}
+.phone img{display:block;width:100%;height:auto;border-radius:30px}
 .phone.a{right:150px;top:0;z-index:2}
 .phone.b{right:0;top:70px;transform:rotate(4deg);opacity:.96}
 /* sections */
@@ -151,6 +155,7 @@ footer{border-top:1px solid var(--line);padding:48px 0 36px;margin-top:88px;back
 .skip{position:absolute;left:12px;top:-80px;z-index:60;background:var(--p);color:#fff;font:600 14px var(--font);padding:10px 14px;border-radius:10px}
 .skip:focus{top:12px}
 .lang a,.note a{display:inline-block;padding:4px 2px}
+.lang a{padding:4px 6px} /* Н241 (Т331 N3): «EN» ≥ 24 px өргөн */
 .faq{display:flex;flex-direction:column;gap:22px;margin-top:32px;max-width:760px}
 .faq h3{font:600 17px/1.4 var(--font);margin-bottom:6px}
 .faq a{color:var(--p);text-decoration:underline}
@@ -179,8 +184,8 @@ footer{border-top:1px solid var(--line);padding:48px 0 36px;margin-top:88px;back
     <p class="note">Үнэгүй бясалгалууд нээлттэй. Утасны дугаараар нэвтэрнэ.</p>
   </div>
   <div class="phones">
-    <div class="phone a"><img src="img/01-home.jpg" alt="Sattva апп — Нүүр"></div>
-    <div class="phone b"><img src="img/02-meditate.jpg" alt="Sattva апп — Бясалгал"></div>
+    <div class="phone a"><img src="img/01-home.jpg" alt="Sattva апп — Нүүр" width="440" height="956"></div>
+    <div class="phone b"><img src="img/02-meditate.jpg" alt="Sattva апп — Бясалгал" width="440" height="956"></div>
   </div>
 </div></div>
 
@@ -195,7 +200,7 @@ footer{border-top:1px solid var(--line);padding:48px 0 36px;margin-top:88px;back
       <div class="step"><span class="t">18:00</span><div><b>Таймертай чимээгүй бясалгал</b><p>5 · 10 · 20 · 30 минут эсвэл хязгааргүй, хонх ба интервалтай.</p></div></div>
       <div class="step"><span class="t">21:30</span><div><b>Иог нидра</b><p>Унтахын өмнөх гүн амралт. Аяллын даалгаварт тоологдоно.</p></div></div>
     </div>
-    <div class="dayPhone"><div class="phone"><img src="img/02-meditate.jpg" alt="Бясалгал — Миний хуваарь"></div></div>
+    <div class="dayPhone"><div class="phone"><img src="img/02-meditate.jpg" alt="Бясалгал — Миний хуваарь" width="440" height="956" loading="lazy"></div></div>
   </div>
 </div></section>
 
@@ -214,12 +219,12 @@ footer{border-top:1px solid var(--line);padding:48px 0 36px;margin-top:88px;back
   <div class="eyebrow">Дэлгэцүүд</div>
   <h2 class="h2">Тайван, ойлгомжтой.</h2>
   <div class="strip">
-    <figure><div class="phone"><img src="img/01-home.jpg" alt=""></div><figcaption>Нүүр</figcaption></figure>
-    <figure><div class="phone"><img src="img/02-meditate.jpg" alt=""></div><figcaption>Бясалгал</figcaption></figure>
-    <figure><div class="phone"><img src="img/03-knowledge.jpg" alt=""></div><figcaption>Мэдлэг</figcaption></figure>
-    <figure><div class="phone"><img src="img/04-seva.jpg" alt=""></div><figcaption>Сева</figcaption></figure>
-    <figure><div class="phone"><img src="img/06-player.jpg" alt=""></div><figcaption>Тоглуулагч</figcaption></figure>
-    <figure><div class="phone"><img src="img/05-profile.jpg" alt=""></div><figcaption>Профайл</figcaption></figure>
+    <figure><div class="phone"><img src="img/01-home.jpg" alt="" width="440" height="956" loading="lazy"></div><figcaption>Нүүр</figcaption></figure>
+    <figure><div class="phone"><img src="img/02-meditate.jpg" alt="" width="440" height="956" loading="lazy"></div><figcaption>Бясалгал</figcaption></figure>
+    <figure><div class="phone"><img src="img/03-knowledge.jpg" alt="" width="440" height="956" loading="lazy"></div><figcaption>Мэдлэг</figcaption></figure>
+    <figure><div class="phone"><img src="img/04-seva.jpg" alt="" width="440" height="956" loading="lazy"></div><figcaption>Сева</figcaption></figure>
+    <figure><div class="phone"><img src="img/06-player.jpg" alt="" width="440" height="956" loading="lazy"></div><figcaption>Тоглуулагч</figcaption></figure>
+    <figure><div class="phone"><img src="img/05-profile.jpg" alt="" width="440" height="956" loading="lazy"></div><figcaption>Профайл</figcaption></figure>
   </div>
   <p class="note">Зурагт жишээ өгөгдөл харагдаж байна.</p>
 </div></section>
@@ -251,7 +256,7 @@ footer{border-top:1px solid var(--line);padding:48px 0 36px;margin-top:88px;back
     <p class="sub">Гүрүдэв Шри Шри Рави Шанкарын үүсгэн байгуулсан Art of Living нь 180 гаруй улсад амьсгал, бясалгал, иогийн хөтөлбөр явуулдаг. Sattva Mongolia апп-ыг Арт Оф Ливинг ХХК хөгжүүлж байна.</p>
     <div class="cta"><a class="btn ghost" href="https://www.facebook.com/AOLMongolia" rel="noopener">Art of Living Mongolia</a></div>
   </div>
-  <div class="dayPhone"><div class="phone"><img src="img/06-player.jpg" alt="Sattva апп — тоглуулагч"></div></div>
+  <div class="dayPhone"><div class="phone"><img src="img/06-player.jpg" alt="Sattva апп — тоглуулагч" width="440" height="956" loading="lazy"></div></div>
 </div></section>
 
 <section id="faq" style="padding-top:0"><div class="wrap">
@@ -259,7 +264,7 @@ footer{border-top:1px solid var(--line);padding:48px 0 36px;margin-top:88px;back
   <div class="faq">
     <div><h3>Апп-ыг хаанаас татах вэ?</h3><p class="sub">App Store, Google Play-д удахгүй гарна. Гармагц энэ хуудсанд холбоос нэмнэ.</p></div>
     <div><h3>Яаж нэвтрэх вэ?</h3><p class="sub">8 оронтой утасны дугаараа оруулахад 6 оронтой код SMS-ээр ирнэ. Кодоо хэнд ч бүү хэл — бид утсаар, мессежээр хэзээ ч асуухгүй. Нэвтрэхгүйгээр ч үнэгүй бясалгалыг үзэж болно.</p></div>
-    <div><h3>Үнэгүй юу байна, гишүүнчлэлээр юу нээгдэх вэ?</h3><p class="sub">Нээлттэй бясалгал, таймер, хуваарь, аяллын эхний 10 шат, Сева үнэгүй. Гишүүнчлэлээр бүх видео лекц, ном, аяллын 11-р шатнаас цааш, татаж интернэтгүй үзэх нээгдэнэ. Үнэ удахгүй зарлагдана. Курсын дасгалууд тухайн курсыг төгссөн хүнд нээгдэнэ.</p></div>
+    <div><h3>Үнэгүй юу байна, гишүүнчлэлээр юу нээгдэх вэ?</h3><p class="sub">Үнэгүй: нээлттэй бясалгал, таймер, хуваарь, сатсанг, Мэдлэгийн үнэгүй хэсэг, аяллын эхний 10 шат, Сева. Гишүүнчлэлээр бүх видео лекц, ном, аяллын 11-р шатнаас цааш, утсанд татаж интернэтгүй үзэх нээгдэнэ. Гишүүнчлэлийн үнэ зарлагдаагүй. Курсын дасгалууд тухайн курсыг төгссөн хүнд нээгдэнэ.</p></div>
     <div><h3>Хандив хаашаа очдог вэ?</h3><p class="sub">Бүх хандив Арт Оф Ливинг ХХК-ийн дансанд орж, сонгосон төсөлдөө зарцуулагдана. Төсөл бүр явц, мэдээтэй; дууссан төсөл тайлантай. Апп-аар хандивлах удахгүй нээгдэнэ.</p></div>
     <div><h3>Курсэд яаж бүртгүүлэх вэ?</h3><p class="sub">Апп-ын Курс табаас хөтөлбөрөө сонгоод «Бүртгүүлэх» дарна. Огноо зарлагдаагүй бол «Огноо удахгүй» гарна — сануулга авах боломжтой.</p></div>
     <div><h3>Бүртгэлээ яаж устгах вэ?</h3><p class="sub">Апп-д: Профайл › Тохиргоо › Бүртгэл устгах. Апп-гүй бол <a href="/delete-account/">sattva.mn/delete-account</a> хуудсаар хүсэлт илгээнэ.</p></div>
