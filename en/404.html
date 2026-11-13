@@ -19,12 +19,16 @@
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/fonts/inter-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-cyrillic-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/fonts/inter.css">
 <style>
 :root{
   --p:#764CDB; --p2:#9A6BF0; --pSoft:#F2ECFF; --ink:#1A1A1B; --ink2:#5E5869; --ink3:#8A8494;
   --line:#ECE7F5; --bg:#FAF9FC; --surface:#FFFFFF; --ok:#1F8A5B; --soonBg:#FFF4D1; --soonFg:#6B5200;
-  --r:20px; --font:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r:20px; --font:"Inter","Inter Fallback",system-ui,-apple-system,"Segoe UI",sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:var(--font);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
@@ -58,7 +62,7 @@ h1{font:800 clamp(36px,4.6vw,60px)/1.06 var(--font);letter-spacing:-.02em;margin
 .note{font:500 13px var(--font);color:var(--ink2);margin-top:14px}
 .phones{position:relative;height:560px}
 .phone{position:absolute;width:250px;border-radius:38px;padding:9px;background:#15121C;box-shadow:0 30px 60px -20px rgba(70,40,140,.45)}
-.phone img{display:block;width:100%;border-radius:30px}
+.phone img{display:block;width:100%;height:auto;border-radius:30px}
 .phone.a{right:150px;top:0;z-index:2}
 .phone.b{right:0;top:70px;transform:rotate(4deg);opacity:.96}
 /* sections */
@@ -146,6 +150,7 @@ footer{border-top:1px solid var(--line);padding:48px 0 36px;margin-top:88px;back
 .skip{position:absolute;left:12px;top:-80px;z-index:60;background:var(--p);color:#fff;font:600 14px var(--font);padding:10px 14px;border-radius:10px}
 .skip:focus{top:12px}
 .lang a,.note a{display:inline-block;padding:4px 2px}
+.lang a{padding:4px 6px} /* Н241 (Т331 N3): «EN» ≥ 24 px өргөн */
 .faq{display:flex;flex-direction:column;gap:22px;margin-top:32px;max-width:760px}
 .faq h3{font:600 17px/1.4 var(--font);margin-bottom:6px}
 .faq a{color:var(--p);text-decoration:underline}
